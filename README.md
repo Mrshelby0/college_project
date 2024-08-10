@@ -48,8 +48,8 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 - **Project Detail Page**: A page that provides detailed information about a specific project idea, including images, instructions, and related projects.
 - **User Dashboard**: A personalized dashboard where users can manage their submissions, saved ideas, and collaborations.
 
-![Home Page Mockup](path/to/home-page-mockup.png)
-![Project Detail Page Mockup](path/to/project-detail-page-mockup.png)
+![Home Page Mockup](homepage.png)
+![Project Detail Page Mockup](projectpage.png)
 ![User Dashboard Mockup](path/to/user-dashboard-mockup.png)
 
 > _Note: Replace the placeholder paths with actual links to your wireframes and mockups._
@@ -71,7 +71,7 @@ The Data Flow Diagram (DFD) for **Project Idea Hub** helps visualize the flow of
 
 ![Data Flow Diagram](dfddiagram.png)
 
-> _Note: Replace the placeholder paths with actual links to your DFD images._
+
 
 ## Installation
 
