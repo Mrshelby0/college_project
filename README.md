@@ -69,7 +69,7 @@ The Data Flow Diagram (DFD) for **Project Idea Hub** helps visualize the flow of
 - **Submission Module**: Allows users to submit new project ideas, which are then stored in the database.
 - **Collaboration Module**: Manages user interactions for discussion and collaboration on projects.
 
-![Data Flow Diagram]("level-2_diagram.png")
+![Data Flow Diagram](level-2_diagram.png)
 
 > _Note: Replace the placeholder paths with actual links to your DFD images._
 
