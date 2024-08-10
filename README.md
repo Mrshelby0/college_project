@@ -71,7 +71,7 @@ The Data Flow Diagram (DFD) for **Project Idea Hub** helps visualize the flow of
 
 ![Data Flow Diagram](dfddiagram.png)
 
-> _Note: Replace the placeholder paths with actual links to your DFD images._
+
 
 ## Installation
 
