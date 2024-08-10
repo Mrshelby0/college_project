@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2024-08-10T07:01:56.673Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="rJXN6cueY4lumpbgX0yP" version="24.4.8" type="device">
+  <diagram name="Page-1" id="y5GWWPR9jHN5OJ1_jL7M">
+    <mxGraphModel dx="2524" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-1" value="User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="159" y="20" width="48" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-2" value="Search Module" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="124" y="123" width="119" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-3" value="Submission Module" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="34" y="406" width="149" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-4" value="Collaboration Module" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="405" y="405" width="167" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-5" value="Project Database" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="115" y="263" width="137" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-6" value="Search Project Ideas" style="curved=1;startArrow=none;endArrow=block;exitX=0.5057779947916666;exitY=1;entryX=0.4981289390756303;entryY=0;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-1" target="MJRPHgUOfr6vezDJIHrP-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-7" value="Submit New Idea" style="curved=1;startArrow=none;endArrow=block;exitX=0.010172526041666666;exitY=0.7200935012294667;entryX=0.19470345464330727;entryY=-0.001343841552734375;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-1" target="MJRPHgUOfr6vezDJIHrP-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="89" />
+              <mxPoint x="20" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-8" value="Collaborate on Projects" style="curved=1;startArrow=none;endArrow=block;exitX=1.0013834635416667;exitY=0.6729242719217429;entryX=0.19588377348466424;entryY=-0.002229368531858766;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-1" target="MJRPHgUOfr6vezDJIHrP-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="392" y="89" />
+              <mxPoint x="392" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-9" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.19400823662224226;exitY=0.9937077911806779;entryX=0.2292691449274714;entryY=-0.006119819536601028;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-2" target="MJRPHgUOfr6vezDJIHrP-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="112" y="228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.808010276315363;exitY=-0.001343841552734375;entryX=0.5531489384198349;entryY=0.9976484742883134;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-3" target="MJRPHgUOfr6vezDJIHrP-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="198" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.8110164884913836;exitY=-0.002229368531858766;entryX=0.9999144616788321;entryY=0.6618220397984973;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-4" target="MJRPHgUOfr6vezDJIHrP-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="586" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-12" value="Return Search Results" style="curved=1;startArrow=none;endArrow=block;exitX=0.5966672339930306;exitY=-0.006119819536601028;entryX=0.6092108698208625;entryY=0.9937077911806779;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-5" target="MJRPHgUOfr6vezDJIHrP-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="209" y="228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-13" value="Store New Idea" style="curved=1;startArrow=none;endArrow=block;exitX=0.16325379221976027;exitY=0.9976484742883134;entryX=0.45123560775976174;entryY=-0.001343841552734375;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-5" target="MJRPHgUOfr6vezDJIHrP-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="94" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MJRPHgUOfr6vezDJIHrP-14" value="Retrieve Project Data" style="curved=1;startArrow=none;endArrow=block;exitX=0.9999144616788321;exitY=0.7147249688306904;entryX=0.5034501309880239;entryY=-0.002229368531858766;rounded=0;" edge="1" parent="1" source="MJRPHgUOfr6vezDJIHrP-5" target="MJRPHgUOfr6vezDJIHrP-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="489" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
