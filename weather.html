@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Project Idea Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-black p-4 flex justify-between items-center">
+        <div class="text-3xl text-green-500 font-bold">Project Idea Hub</div>
+        <nav>
+            <a href="index.html" class="text-white hover:text-green-500 px-4">Home</a>
+            <a href="cat.html" class="text-white hover:text-green-600 px-4">Categories</a>
+            <a href="submit.html" class="text-white hover:text-green-600 px-4">Submit Project</a>
+            <a href="about.html" class="text-white hover:text-green-600 px-4">About</a>
+            <a href="contact.html" class="text-white hover:text-green-600 px-4">Contact</a>
+            <a href="login.html" class="text-white hover:text-green-600 px-4">Login/Signup</a>
+        </nav>
+    </header>
+        <div class="text-green-500 font-bold text-2xl p-8">
+           >>>>>> <a href="Techcategories.html" class="hover:underline">Teachnology</a> / <a href="mobileapp.html" class="hover:underline">Moblie Application</a>
+        </div>
+        <br>
+        <br>
+
+        <h1 class="text-5xl font-bold text-green-500 underline text-center mb-4">Building a Weather App with React Native</h1>
+
+    <!-- Main Content -->
+ <!-- Main Content -->
+ <main class="container mx-auto py-16 px-4">
+    <!-- Blog Post -->
+    <article class="bg-white p-8 shadow-lg rounded-lg">
+        <header>
+            <p class="text-gray-600">A weather forecasting app using React Native.</p>
+        </header>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-green-500 mb-4 text-center">Project Overview</h2>
+            <br>
+            <p><strong>Title:</strong> Weather App</p>
+            <p><strong>Description:</strong> A weather forecasting app using React Native.</p>
+            <p><strong>Details:</strong> Develop a mobile app that fetches and displays weather data from an API. Learn how to handle API requests, manage state, and create a user-friendly interface with React Native.</p>
+            <br>
+            <h2 class="text-2xl font-bold text-green-500 mt-8 mb-4 text-center">Step 1: Setting Up the Project</h2>
+
+            <h3 class="text-xl font-bold text-green-500 mt-8 mb-2">Setting Up React Native</h3>
+            <ol class="list-decimal list-inside ml-4">
+                <li>Install the React Native CLI:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>npm install -g react-native-cli</code>
+                </pre>
+                <li>Create a new React Native application:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>react-native init WeatherApp<br>cd WeatherApp</code>
+                </pre>
+            </ol>
+
+            <h3 class="text-xl font-bold text-green-500 mt-8 mb-2">Installing Dependencies</h3>
+            <ol class="list-decimal list-inside ml-4">
+                <li>Install necessary dependencies:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>npm install axios react-native-elements</code>
+                </pre>
+            </ol>
+            <br>
+            <h2 class="text-2xl font-bold text-green-500 mt-8 mb-4 text-center">Step 2: Creating the App Structure</h2>
+
+            <h3 class="text-xl font-bold text-green-500 mt-8 mb-2">Setting Up the API Request</h3>
+            <ol class="list-decimal list-inside ml-4">
+                <li>Create a new folder and file for API services:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>mkdir src/services<br>touch src/services/weather.js</code>
+                </pre>
+                <li>Set up the API request in <code>src/services/weather.js</code>:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>
+                        {`
+import axios from 'axios';
+
+const API_KEY = 'YOUR_API_KEY';
+const BASE_URL = 'http://api.weatherapi.com/v1/current.json';
+
+export const fetchWeather = (location) => {
+return axios.get(\`\${BASE_URL}?key=\${API_KEY}&q=\${location}\`);
+};
+                        `}
+                    </code>
+                </pre>
+            </ol>
+
+            <h3 class="text-xl font-bold text-green-500 mt-8 mb-2">Creating the Weather Component</h3>
+            <ol class="list-decimal list-inside ml-4">
+                <li>Create the necessary folders and files:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>mkdir src/components<br>touch src/components/Weather.js</code>
+                </pre>
+                <li>Set up the Weather component in <code>src/components/Weather.js</code>:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>
+                        {`
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { fetchWeather } from '../services/weather';
+
+const Weather = () => {
+const [location, setLocation] = useState('');
+const [weather, setWeather] = useState(null);
+
+const handleFetchWeather = async () => {
+try {
+  const response = await fetchWeather(location);
+  setWeather(response.data);
+} catch (error) {
+  console.error('Error fetching weather:', error);
+}
+};
+
+return (
+<View style={styles.container}>
+  <Text style={styles.title}>Weather App</Text>
+  <TextInput
+    style={styles.input}
+    placeholder="Enter location"
+    value={location}
+    onChangeText={setLocation}
+  />
+  <Button title="Get Weather" onPress={handleFetchWeather} />
+  {weather && (
+    <View style={styles.weatherContainer}>
+      <Text style={styles.weatherText}>Location: {weather.location.name}</Text>
+      <Text style={styles.weatherText}>Temperature: {weather.current.temp_c}°C</Text>
+      <Text style={styles.weatherText}>Condition: {weather.current.condition.text}</Text>
+    </View>
+  )}
+</View>
+);
+};
+
+const styles = StyleSheet.create({
+container: {
+flex: 1,
+justifyContent: 'center',
+alignItems: 'center',
+padding: 16,
+},
+title: {
+fontSize: 24,
+marginBottom: 16,
+},
+input: {
+height: 40,
+borderColor: 'gray',
+borderWidth: 1,
+paddingHorizontal: 8,
+marginBottom: 16,
+width: '80%',
+},
+weatherContainer: {
+marginTop: 16,
+},
+weatherText: {
+fontSize: 18,
+},
+});
+
+export default Weather;
+                        `}
+                    </code>
+                </pre>
+            </ol>
+
+            <h3 class="text-xl font-bold text-green-500 mt-8 mb-2">Integrating the Weather Component</h3>
+            <ol class="list-decimal list-inside ml-4">
+                <li>Modify <code>App.js</code> to include the Weather component:</li>
+                <pre class="bg-gray-100 p-4 rounded">
+                    <code>
+                        {`
+import React from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import Weather from './src/components/Weather';
+
+const App = () => {
+return (
+<SafeAreaView style={styles.container}>
+  <Weather />
+</SafeAreaView>
+);
+};
+
+const styles = StyleSheet.create({
+container: {
+flex: 1,
+},
+});
+
+export default App;
+                        `}
+                    </code>
+                </pre>
+            </ol>
+
+            <h2 class="text-2xl font-bold text-green-500 mt-8 mb-4">Conclusion</h2>
+            <p>Developing a weather forecasting app using React Native allows you to gain experience with mobile app development, API requests, and state management. By following this guide, you can create a functional and user-friendly weather app that fetches and displays real-time weather data. Feel free to expand the app by adding more features such as weather forecasts, location search history, and more.</p>
+
+            <p>Happy coding!</p>
+
+            <p>This blog post guides you through the process of creating a weather app from scratch using React Native. If you have any questions or need further assistance, feel free to leave a comment below.</p>
+        </section>
+    </article>
+</main>
+    <!-- Footer -->
+    <footer class="bg-black p-4 text-center">
+        <div class="text-white">
+            <a href="#" class="px-4">Privacy Policy</a>
+            <a href="#" class="px-4">Terms of Service</a>
+            <a href="#" class="px-4">© 2024 Student Project Idea Hub</a>
+        </div>
+    </footer>
+</body>
+</html>

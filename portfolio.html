@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Project Idea Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-black p-4 flex justify-between items-center">
+        <div class="text-3xl text-green-500 font-bold">Project Idea Hub</div>
+        <nav>
+            <a href="index.html" class="text-white hover:text-green-500 px-4">Home</a>
+            <a href="cat.html" class="text-white hover:text-green-600 px-4">Categories</a>
+            <a href="submit.html" class="text-white hover:text-green-600 px-4">Submit Project</a>
+            <a href="about.html" class="text-white hover:text-green-600 px-4">About</a>
+            <a href="contact.html" class="text-white hover:text-green-600 px-4">Contact</a>
+            <a href="login.html" class="text-white hover:text-green-600 px-4">Login/Signup</a>
+        </nav>
+    </header>
+        <div class="text-green-500 font-bold text-2xl p-8">
+           >>>>>> <a href="Techcategories.html" class="hover:underline">Teachnology</a> / <a href="webdev.html" class="hover:underline">Web Development</a>
+        </div>
+
+
+        <div class="max-w-4xl mx-auto p-6">
+            <header class="text-center my-8">
+                <h1 class="text-4xl font-bold text-green-500">Creating a Stunning Portfolio Using HTML, CSS, and JavaScript</h1>
+                <p class="text-gray-600 mt-4 font-bold">By Sparsh Sharma</p>
+            </header>
+            <div class="bg-white p-8 border-green-500 border-4">
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Step 1: Setting Up the Project</h2>
+                <p>Create a new directory for your project. Inside this directory, create three files: <code class="bg-gray-200 p-1 rounded">index.html</code>, <code class="bg-gray-200 p-1 rounded">styles.css</code>, and <code class="bg-gray-200 p-1 rounded">script.js</code>.</p>
+                <pre class="bg-gray-200 font-bold p-4 rounded mt-4">
+    portfolio/
+    |-- index.html
+    |-- styles.css
+    |-- script.js
+                </pre>
+            </section>
+    
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Step 2: Creating the HTML Structure</h2>
+                <p>Open <code class="bg-gray-200 p-1 rounded">index.html</code> and set up the basic HTML structure.</p>
+                <pre class="bg-gray-200 font-bold p-4 rounded mt-4">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My Portfolio&lt;/title&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Sparsh Sharma&lt;/h1&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+    
+        &lt;section id="about"&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;Hello! I'm Sparsh Sharma, a computer application student and blog
+             writer with 2 years of experience...&lt;/p&gt;
+        &lt;/section&gt;
+    
+        &lt;section id="projects"&gt;
+            &lt;h2&gt;Projects&lt;/h2&gt;
+            &lt;div class="project"&gt;
+                &lt;h3&gt;Project 1&lt;/h3&gt;
+                &lt;p&gt;Description of project 1.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="project"&gt;
+                &lt;h3&gt;Project 2&lt;/h3&gt;
+                &lt;p&gt;Description of project 2.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    
+        &lt;section id="contact"&gt;
+            &lt;h2&gt;Contact&lt;/h2&gt;
+            &lt;p&gt;You can reach me at: &lt;a href="mailto:example@example.com"&gt;
+            example@example.com&lt;/a&gt;&lt;/p&gt;
+        &lt;/section&gt;
+    
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                </pre>
+            </section>
+    
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Step 3: Styling with CSS</h2>
+                <p>Open <code class="bg-gray-200 p-1 rounded">styles.css</code> and add styles to make your portfolio visually appealing. We will use your preferred theme colors: black and #5cb9a6.</p>
+                <pre class="bg-gray-200 font-bold p-4 rounded mt-4">
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    header nav ul li a {
+        color: #5cb9a6;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #5cb9a6;
+    }
+    
+    .project {
+        margin-bottom: 20px;
+    }
+                </pre>
+            </section>
+    
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Step 4: Adding Interactivity with JavaScript</h2>
+                <p>Open <code class="bg-gray-200 p-1 rounded">script.js</code> and add JavaScript to enhance user experience. For this example, we'll add a smooth scroll effect when navigating through the sections.</p>
+                <pre class="bg-gray-200 font-bold p-4 rounded mt-4">
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('nav ul li a');
+    
+        for (const link of links) {
+            link.addEventListener('click', smoothScroll);
+        }
+    
+        function smoothScroll(event) {
+            event.preventDefault();
+            const targetId = event.currentTarget.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+    
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+                </pre>
+            </section>
+    
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Step 5: Testing Your Portfolio</h2>
+                <p>Open <code class="bg-gray-200 p-1 rounded">index.html</code> in your web browser to see your portfolio in action. Test the navigation links to ensure the smooth scroll effect works as expected.</p>
+            </section>
+    
+            <section>
+                <h2 class="text-3xl font-semibold text-teal-500 mb-4">Conclusion</h2>
+                <p>Congratulations! You've created a simple and elegant portfolio using HTML, CSS, and JavaScript. This portfolio serves as a foundation that you can expand upon by adding more projects, improving styles, and incorporating advanced features. A well-designed portfolio is a powerful tool to showcase your skills and make a strong impression on potential employers or clients.</p>
+                <p>Feel free to customize the content, style, and functionality to match your personal brand and preferences. Happy coding!</p>
+            </section>
+        </div>
+        </div>
+
+
+        <div class="text-center text-2xl p-8">Thank you for Reading ;) Please comment and share this post with your friends</div>
+
+    <!-- Footer -->
+    <footer class="bg-black p-4 text-center">
+        <div class="text-white">
+            <a href="#" class="px-4">Privacy Policy</a>
+            <a href="#" class="px-4">Terms of Service</a>
+            <a href="#" class="px-4">© 2024 Student Project Idea Hub</a>
+        </div>
+    </footer>
+</body>
+</html>
