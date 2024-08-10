@@ -52,7 +52,7 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 ![Project Detail Page Mockup](projectpage.png)
 ![User Dashboard Mockup](path/to/user-dashboard-mockup.png)
 
-> _Note: Replace the placeholder paths with actual links to your wireframes and mockups._
+
 
 ## Data Flow Diagram (DFD)
 
