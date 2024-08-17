@@ -52,7 +52,7 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 ![Project Detail Page Mockup](projectpage.png)
 ![User Dashboard Mockup](path/to/user-dashboard-mockup.png)
 
-> _Note: Replace the placeholder paths with actual links to your wireframes and mockups._
+
 
 ## Data Flow Diagram (DFD)
 
@@ -145,7 +145,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you have any questions, suggestions, or feedback, feel free to reach out:
 
 - **Project Maintainer:** Sparsh Sharma
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
+- **Email:** [sparshsharma1409@gmail.com](mailto:sparshsharma1409@gmail.com)
+
 
 ---
 
