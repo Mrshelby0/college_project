@@ -1,79 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Login</title>
-</head>
-<body>
-    <header class="bg-black p-4 flex justify-between items-center">
-        <div class="text-2xl font-bold text-green-500">Project Idea Hub</div>
-        <nav>
-            <a href="index.html" class="text-white px-4 hover:text-green-500">Home</a>
-            <a href="cat.html" class="text-white px-4 hover:text-green-500">Categories</a>
-            <a href="submit.html" class="text-white px-4 hover:text-green-500">Submit Project</a>
-            <a href="about.html" class="text-white px-4 hover:text-green-500">About</a>
-            <a href="contact.html" class="text-white hover:text-green-500 px-4">Contact</a>
-            <a href="login.html" class="text-green-500 px-4 text-2xl ">Login/Signup</a>
-        </nav>
-    </header>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <style>
+      @keyframes rgb-hr {
+          0% {
+              background-position: 0% 50%;
+          }
+          50% {
+              background-position: 100% 50%;
+          }
+          100% {
+              background-position: 0% 50%;
+          }
+      }
+      .rgb-hr {
+          border: 0;
+          height: 5px;
+          background: linear-gradient(270deg, red, green, blue, yellow, pink, purple, white, black, red);
+          background-size: 600% 600%;
+          animation: rgb-hr 5s infinite;
+      }
+  </style>
+       <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Login | Project Idea Hub</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-green-500"
+            href="index.html"
+            >Project Idea Hub</a
+          >
+        </div>
 
-
-    <div class="relative py-16">
-        <div class="container relative m-auto px-6 text-gray-500 md:px-12 xl:px-40">
-          <div class="m-auto space-y-8 md:w-8/12 lg:w-6/12 xl:w-6/12">
-            <img src="images/tailus.svg" loading="lazy" class="ml-4 w-36" alt="tailus logo" />
-            <div class="rounded-3xl border border-gray-100 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 backdrop-blur-2xl">
-              <div class="p-8 py-12 sm:p-16">
-                <h2 class="mb-8 text-2xl font-bold text-gray-800 dark:text-white">Sign in to your account</h2>
-                <form action="" class="space-y-8">
-                  <div class="space-y-2">
-                    <label for="email" class="text-gray-600 dark:text-gray-300">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autocomplete="username"
-                      class="focus:outline-none block w-full rounded-md border border-gray-200 dark:border-gray-600 bg-transparent px-4 py-3 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-cyan-300"
-                    />
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <button
+                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+              >
+                <i class="fas fa-arrow-alt-circle-down"></i> sign-up
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="absolute w-full h-full">
+        <div
+          class="absolute top-0 w-full h-full bg-gray-900"
+          style="background-image: url(./assets/img/register_bg_2.png); background-size: 100%; background-repeat: no-repeat;"
+        ></div>
+        <div class="container mx-auto px-4 h-full">
+          
+          <div class="flex content-center items-center justify-center h-full">
+            
+            <div class="w-full lg:w-4/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0"
+              >
+                <div class="rounded-t mb-0 px-6 py-6">
+                  <div class="text-center mb-3">
+                    <h6 class="text-gray-600 text-sm font-bold">
+                      Sign in with
+                    </h6>
                   </div>
-      
-                  <div>
-                    <div class="flex items-center justify-between">
-                      <label for="pwd" class="text-gray-600 dark:text-gray-300">Password</label>
-                      <button class="-mr-2 p-2" type="reset">
-                        <span class="text-sm text-primary">Forgot your password ?</span>
+                  <div class="btn-wrapper text-center">
+                    <button
+                      class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;"
+                    >
+                      <img
+                        alt="..."
+                        class="w-5 mr-1"
+                        src="./assets/img/github.svg"
+                      />Github</button
+                    ><button
+                      class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;"
+                    >
+                      <img
+                        alt="..."
+                        class="w-5 mr-1"
+                        src="./assets/img/google.svg"
+                      />Google
+                    </button>
+                  </div>
+                  <br>
+                  <hr class="rgb-hr">
+                </div>
+                <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+                  <div class="text-gray-500 text-center mb-3 font-bold">
+                    <small>Or sign in with credentials</small>
+                  </div>
+                  <form>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password"
+                        >Email</label
+                      ><input
+                        type="email"
+                        class="border-0 px-3 py-3 placeholder-green-500 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="Email"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password"
+                        >Password</label
+                      ><input
+                        type="password"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="Password"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center cursor-pointer"
+                        ><input
+                          id="customCheckLogin"
+                          type="checkbox"
+                          class="form-checkbox border-0 rounded text-gray-800 ml-1 w-5 h-5"
+                          style="transition: all 0.15s ease 0s;"
+                        /><span class="ml-2 text-sm font-semibold text-gray-700"
+                          >Remember me</span
+                        ></label
+                      >
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        Sign In
                       </button>
                     </div>
-                    <input
-                      type="password"
-                      name="pwd"
-                      id="pwd"
-                      autocomplete="current-password"
-                      class="focus:outline-none block w-full rounded-md border border-gray-200 dark:border-gray-600 bg-transparent px-4 py-3 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-cyan-300"
-                    />
-                  </div>
-      
-                  <button type="submit" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
-                    <span class="relative text-base font-semibold text-white dark:text-dark">Connect</span>
-                  </button>
-      
-                  <p class="border-t border-gray-100 dark:border-gray-700 pt-6 text-sm text-gray-500 dark:text-gray-400">
-                    Don't have an account ?
-                    <a href="#" class="text-primary">Sign up</a>
-                  </p>
-                </form>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div class="space-x-4 text-center text-gray-500">
-              <span>&copy; tailus</span>
-              <a href="#" class="text-sm hover:text-primary">Contact</a>
-              <a href="#" class="text-sm hover:text-primary">Privacy & Terms</a>
+              <div class="flex flex-wrap mt-6">
+                <div class="w-1/2">
+                  <a href="#pablo" class="text-gray-300"
+                    ><small>Forgot password?</small></a
+                  >
+                </div>
+                <div class="w-1/2 text-right">
+                  <a href="#pablo" class="text-gray-300"
+                    ><small>Create new account</small></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-                                          
-</body>
+        <footer class="absolute w-full bottom-0 bg-gray-900 pb-6">
+          <div class="container mx-auto px-4">
+            <hr class="rgb-hr">
+            <br>
+            <div
+              class="flex flex-wrap items-center md:justify-between justify-center"
+            >
+              <div class="w-full md:w-4/12 px-4">
+                <div class="text-sm text-white font-semibold py-1">
+                  Copyright © 2019
+                  <a
+                    href="index.html"
+                    class="text-white hover:text-gray-400 text-sm font-semibold py-1"
+                    >Project Idea Hub</a
+                  >
+                </div>
+              </div>
+              <div class="w-full md:w-8/12 px-4">
+                <ul
+                  class="flex flex-wrap list-none md:justify-end  justify-center"
+                >
+                  <li>
+                    <a
+                      href="cat.html"
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >categories</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="about.html"
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Mrshelby0/college_project/blob/main/LICENSE"
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >MIT License</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
 </html>

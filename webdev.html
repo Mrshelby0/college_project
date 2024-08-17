@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Categories - Project Idea Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes rgb-hr {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .rgb-hr {
+            border: 0;
+            height: 5px;
+            background: linear-gradient(270deg, red, green, blue, yellow,pink,purple,white,black, red);
+            background-size: 600% 600%;
+            animation: rgb-hr 5s infinite;
+        }
+        
+        
+        </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Header -->
     <header class="bg-black p-4 flex justify-between items-center">
         <div class="text-2xl text-green-500 font-bold">Project Idea Hub</div>
         <nav>
-            <a href="index.html" class="text-green-600 text-2xl px-4">Home</a>
-            <a href="cat.html" class="text-white hover:text-green-600 px-4">Categories</a>
+            <a href="index.html" class="text-white hover:text-green-500  px-4">Home</a>
+            <a href="cat.html" class="text-green-500 text-2xl px-4">Categories</a>
             <a href="submit.html" class="text-white hover:text-green-600 px-4">Submit Project</a>
             <a href="about.html" class="text-white hover:text-green-600 px-4">About</a>
             <a href="contact.html" class="text-white hover:text-green-600 px-4">Contact</a>
@@ -63,7 +86,9 @@
             </div>
         </div>
     </main>
-
+    <br>
+    <br>
+    <br>
     <!-- Footer -->
     <footer class="bg-black p-4 text-center">
         <div class="text-white">

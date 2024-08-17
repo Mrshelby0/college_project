@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Detail - Project Idea Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes rgb-hr {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .rgb-hr {
+            border: 0;
+            height: 5px;
+            background: linear-gradient(270deg, red, green, blue, yellow,pink,purple,white,black, red);
+            background-size: 600% 600%;
+            animation: rgb-hr 5s infinite;
+        }
+        
+        
+        </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Header -->
@@ -187,6 +210,38 @@
 
 
         <div class="text-center text-2xl p-8">Thank you for Reading ;) Please comment and share this post with your friends</div>
+        <div class="max-w-4xl mx-auto p-6">
+        <div class="bg-gray-300 p-4 rounded-lg mb-6">
+            <h2 class="text-xl text-green-500 font-semibold mb-4">Leave a Comment</h2>
+            <form>
+                <input type="text" placeholder="Write a comment..." class="w-full p-2 mb-4 bg-gray-700 text-white border border-[#5cb9a6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5cb9a6]">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-2">
+                        <button type="button" class="text-[#5cb9a6]">😊</button>
+                        <button type="button" class="text-[#5cb9a6]">GIF</button>
+                        <button type="button" class="text-[#5cb9a6]">📎</button>
+                    </div>
+                    <button type="submit" class="bg-green-500 hover:bg-green-900 text-white py-1 px-4 rounded-lg">Publish</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-gray-300 p-4 rounded-lg mb-6">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full mr-4">
+                <div>
+                    <div class="font-semibold">BLACK DEVIL</div>
+                    <div class="text-xs text-gray-400">a few seconds ago</div>
+                </div>
+            </div>
+            <p class="mb-4 px-14">make sure you like share and subscribe :)</p>
+            <div class="flex space-x-4 px-6">
+                <button type="button" class="text-green-500  hover:underline">Like</button>
+                <button type="button" class="text-green-500  hover:underline">Reply</button>
+            </div>
+        </div>
+        </div>
+        
+
 
     <!-- Footer -->
     <footer class="bg-black p-4 text-center">

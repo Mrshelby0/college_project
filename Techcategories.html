@@ -25,6 +25,29 @@
             z-index: -1;
         }
     </style>
+    <style>
+        @keyframes rgb-hr {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .rgb-hr {
+            border: 0;
+            height: 5px;
+            background: linear-gradient(270deg, red, green, blue, yellow,pink,purple,white,black, red);
+            background-size: 600% 600%;
+            animation: rgb-hr 5s infinite;
+        }
+        
+        
+        </style>
     <script>
         const projects = {
             "Web Development": [
@@ -81,7 +104,7 @@
         <h1 class="text-4xl font-bold text-green-500 mb-8"><div id="typing-effect"></div></h1>
         <input type="text" class="p-2 w-2/3 rounded bg-white text-black" placeholder="Search for projects...">
     </main>
-    <hr class="border-t-4 border-green-500 my-8">
+    <hr class="rgb-hr">
 
     <!-- Content Section -->
     <section class="flex">
@@ -109,7 +132,7 @@
         </div>
     </section>
 
-    <hr class="border-t-4 border-green-500 my-8">
+    <hr class="rgb-hr">
 
     <!-- Footer -->
     <footer class="bg-black p-4 text-center">

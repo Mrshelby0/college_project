@@ -3,76 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Project Idea Hub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes rgb-hr {
+          0% {
+              background-position: 0% 50%;
+          }
+          50% {
+              background-position: 100% 50%;
+          }
+          100% {
+              background-position: 0% 50%;
+          }
+      }
+      
+      .rgb-hr {
+          border: 0;
+          height: 5px;
+          background: linear-gradient(270deg, red, green, blue, yellow,pink,purple,white,black, red);
+          background-size: 600% 600%;
+          animation: rgb-hr 5s infinite;
+      }
+      
+      
+      </style>
 </head>
-<body class="bg-white text-white">
-    <!-- Header -->
-    <header class="bg-black p-4 flex justify-between items-center">
-        <div class="text-2xl font-bold text-green-500">Project Idea Hub</div>
-        <nav>
-            <a href="index.html" class="text-white px-4 hover:text-green-500">Home</a>
-            <a href="cat.html" class="text-white px-4 hover:text-green-500">Categories</a>
-            <a href="submit.html" class="text-white px-4 hover:text-green-500">Submit Project</a>
-            <a href="about.html" class="text-white px-4 hover:text-green-500">About</a>
-            <a href="contact.html" class="text-green-500 text-2xl px-4">Contact</a>
-            <a href="login.html" class="text-white px-4 hover:text-green-500">Login/Signup</a>
-        </nav>
-    </header>
-    <br>
-    <br>
+<body class="bg-gradient-to-b from-green-950 to-blue-950 text-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+    <hr class="rgb-hr">
+  </div>
+    <!-- Navbar -->
+    <header class="astro-UY3JLCBK">
+      <nav class="z-10 w-full absolute astro-UY3JLCBK">
+          <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+              <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative astro-UY3JLCBK">
+                  <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer astro-UY3JLCBK">
+                  <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0 astro-UY3JLCBK">
+                      <a href="#" aria-label="logo" class="flex space-x-2 items-center astro-UY3JLCBK">
+                          <div aria-hidden="true" class="flex space-x-1 astro-UY3JLCBK">
+                              <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-green-500 astro-UY3JLCBK"></div>
+                              <div class="h-6 w-2 bg-primary astro-UY3JLCBK"></div>
+                          </div>
+                          <span class="text-2xl font-bold text-gray-900 dark:text-green-500 astro-UY3JLCBK">Project Idea Hub</span>
+                      </a>
+                      <div class="relative flex items-center lg:hidden max-h-10 astro-UY3JLCBK">
+                          <label role="button" for="toggle_nav" aria-label="hamburger" id="hamburger" class="relative p-6 -mr-6 astro-UY3JLCBK">
+                              <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-green-900 dark:bg-gray-300 transition duration-300 astro-UY3JLCBK"></div>
+                              <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-green-900 dark:bg-gray-300 transition duration-300 astro-UY3JLCBK"></div>
+                          </label>
+                      </div>
+                  </div>
+                  <div aria-hidden="true" class="fixed z-10 inset-0 h-screen w-screen  backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden  astro-UY3JLCBK"></div>
+                  <div class="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border   shadow-2xl  justify-end w-full invisible opacity-0 translate-y-1 absolute top-full left-0 transition-all duration-300 scale-95 origin-top lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none dark:shadow-none astro-UY3JLCBK">
+                      <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0 astro-UY3JLCBK">
+                          <ul class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0 astro-UY3JLCBK">
+                              <li class="astro-UY3JLCBK">
+                                  <a href="index.html" class="block md:px-4 transition hover:text-green-500 text-xl astro-UY3JLCBK">
+                                      <span class="astro-UY3JLCBK">Home</span>
+                                  </a>
+                              </li>
+                              <li class="astro-UY3JLCBK">
+                                  <a href="cat.html" class="block md:px-4 transition hover:text-green-500 text-xl astro-UY3JLCBK">
+                                      <span class="astro-UY3JLCBK">Categories</span>
+                                  </a>
+                              </li>
+                              <li class="astro-UY3JLCBK">
+                                  <a href="submit.html" class="block md:px-4 transition text-xl hover:text-green-500 astro-UY3JLCBK">
+                                      <span class="astro-UY3JLCBK">Submit Project</span>
+                                  </a>
+                              </li>
+                              <li class="astro-UY3JLCBK">
+                                  <a href="about.html" class="block md:px-4 transition text-xl hover:text-green-500 astro-UY3JLCBK">
+                                      <span class="astro-UY3JLCBK">About</span>
+                                  </a>
+                              </li>
+                              <li class="astro-UY3JLCBK">
+                                  <a href="contact.html" class="block md:px-4 transition text-2xl text-green-500 astro-UY3JLCBK">
+                                      <span class="astro-UY3JLCBK">Contact</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="mt-12 lg:mt-0 astro-UY3JLCBK">
+                          <a href="login.html" class="relative flex h-9 w-full items-center justify-center px-6 py-5 before:absolute before:inset-0 before:rounded-full before:bg-green-700 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max astro-UY3JLCBK">
+                              <span class="relative font-semibold text-white text-xl astro-UY3JLCBK">Login</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
 
-    <!-- Main Section -->
-   
-    <section class="text-gray-600 body-font relative">
-        <div class="absolute inset-0 bg-gray-300">
-          <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28343.15283194212!2d77.16537934845298!3d28.61389554845064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d9f2d8f8f9f%3A0x1b1f9cfb8d3f394e!2sDelhi%2C%20India!5e0!3m2!1sen!2sus!4v1658464273957!5m2!1sen!2sus"
-          style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-        </div>
-        <div class="container px-5 py-24 mx-auto flex">
-          <div class="lg:w-1/3 md:w-1/2 bg-white border-4 border-green-500 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-            <h2 class="text-gray-900  mb-1 text-2xl title-font font-bold">Feedback</h2>
-            <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-xl text-black font-bold">Email</label>
-              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <div class="relative mb-4">
-              <label for="message" class="leading-7 text-xl text-black font-bold">Message</label>
-              <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
-            <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Send</button>
-            <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
           </div>
-        </div>
-      </section>
+      </nav>
+  </header>
+  <br>
 
-    <!-- Footer -->
+
+    <!-- Hero Section -->
+    <section class="text-center mt-20 p-52">
+
+        
+        <h1 class="text-6xl font-bold text-green-400">Contact Me</h1>
+        <br>
+        <p class="text-lg italic mt-2">"The quickest way to get in touch with me is via email. I strive to respond to all inquiries as soon as possible.
+
+          "</p>
+        <p class="text-md mt-4 max-w-2xl mx-auto">I would love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out to me through any of the following channels like twitter instagram or Email.</p>
+    </section>
+    <br>
+    <br>
+    <br>
+<hr class="rgb-hr">
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+      <div class="absolute inset-0 bg-gray-900">
+
+        <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28343.15283194212!2d77.16537934845298!3d28.61389554845064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d9f2d8f8f9f%3A0x1b1f9cfb8d3f394e!2sDelhi%2C%20India!5e0!3m2!1sen!2sus!4v1658464273957!5m2!1sen!2sus"
+        style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>      </div>
+      <div class="container px-5 py-24 mx-auto flex">
+        <div class="lg:w-1/3 md:w-1/2 bg-gradient-to-b from-green-950 to-blue-950 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+          <h2 class="text-green-500 text-2xl mb-1 font-medium title-font">Feedback</h2>
+          <p class="leading-relaxed mb-5">Prefer to send a message directly through the website? Just fill out the form below, and I'll get back to you as soon as I can!</p>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-xl text-green-500">Email</label>
+            <br>
+            <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-xl text-green-500">Message</label>
+            <br>
+            <textarea id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+          <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">send</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+
 		<!-- Footer -->
-		<footer class="py-16">
-			<div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+		<footer class="py-16 bg-gradient-to-b from-green-950 to-blue-950">
+			<div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 ">
+        <hr class="rgb-hr">
+        <br>
 				<div class="space-y-6 text-center">
 					<a href="#" aria-label="logo" class="flex space-x-2 justify-center items-center">
 						<div aria-hidden="true" class="flex space-x-1">
-							<div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
+							<div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-green-500"></div>
 							<div class="h-6 w-2 bg-primary"></div>
 						</div>
-						<span class="text-2xl font-bold text-gray-900 dark:text-white">Project Idea Hub</span>
+						<span class="text-2xl font-bold text-gray-900 dark:text-green-500">Project Idea Hub</span>
 					</a>
 					<hr class="rgb-hr mx-auto w-24">
 					<p class="text-gray-700 dark:text-gray-300">Empowering students to create, collaborate, and innovate.</p>
 					<ul role="list" class="flex flex-wrap justify-center items-center gap-4 text-gray-700 dark:text-gray-300">
 						<li class="text-sm">
-							<a href="about.html" class="transition hover:text-primary">About</a>
+							<a href="about.html" class="transition hover:text-green-500">About</a>
 						</li>
 						<li class="text-sm">
-							<a href="contact.html" class="transition hover:text-primary">Contact</a>
+							<a href="contact.html" class="transition hover:text-green-500">Contact</a>
 						</li>
 						<li class="text-sm">
-							<a href="submit.html" class="transition hover:text-primary">Submit Project</a>
+							<a href="submit.html" class="transition hover:text-green-500">Submit Project</a>
 						</li>
 						<li class="text-sm">
-							<a href="privacy.html" class="transition hover:text-primary">Privacy Policy</a>
+							<a href="privacy.html" class="transition hover:text-green-500">Privacy Policy</a>
 						</li>
 					</ul>
 				</div>
