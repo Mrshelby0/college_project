@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Innovations</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0f1c;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .glow-title {
+    font-size: 3rem;
+    background: linear-gradient(to right, #ff7f50, #ff6347);
+    -webkit-background-clip: text;
+    background-clip: text; /* Added standard property for compatibility */
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 127, 80, 0.8), 0 0 20px rgba(255, 99, 71, 0.8);
+}
+
+        .art-card, .category-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .art-card:hover, .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 99, 71, 0.3);
+        }
+        .button-explore {
+            background: linear-gradient(to right, #ff7f50, #ff6347);
+            color: #0a0f1c;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button-explore:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(to right, #ff6347, #ff7f50);
+        }
+        .gradient-border {
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #ff7f50, #ff6347) 1;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-6 px-10 bg-gray-900 flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold text-orange-400">ArtSphere</h1>
+        <nav>
+            <a href="#" class="text-gray-300 hover:text-orange-400 mx-4">Home</a>
+            <a href="#" class="text-gray-300 hover:text-orange-400 mx-4">Projects</a>
+            <a href="#" class="text-gray-300 hover:text-orange-400 mx-4">Submit</a>
+            <a href="#" class="text-gray-300 hover:text-orange-400 mx-4">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-6">
+        <h1 class="glow-title">Unleashing Creativity Through Art</h1>
+        <p class="text-gray-400 mt-4 text-lg">Explore artistic projects that showcase the limitless boundaries of creativity.</p>
+        <div class="mt-6">
+            <input 
+                type="text" 
+                class="w-2/3 max-w-xl p-3 rounded-md border border-gray-600 bg-gray-800 text-gray-300 placeholder-gray-500" 
+                placeholder="Search art projects...">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-12 px-10">
+        <h2 class="text-3xl font-bold text-orange-400 text-center">Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <!-- Card 1 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-orange-400">Abstract Art</h4>
+                <p class="text-gray-300 mt-4">Dive into the world of abstract expressionism, where colors and shapes speak volumes.</p>
+                <a href="#" class="inline-block mt-4 text-orange-400 hover:underline">View Projects →</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-orange-400">Modern Art</h4>
+                <p class="text-gray-300 mt-4">Explore the evolution of art through contemporary works, combining tradition and innovation.</p>
+                <a href="#" class="inline-block mt-4 text-orange-400 hover:underline">View Projects →</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-orange-400">Street Art</h4>
+                <p class="text-gray-300 mt-4">Discover the vibrant and rebellious world of urban street art and its social impact.</p>
+                <a href="#" class="inline-block mt-4 text-orange-400 hover:underline">View Projects →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Art Projects -->
+    <section class="py-12 px-10">
+        <h2 class="text-2xl font-bold text-orange-400 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- Card 1 -->
+            <div class="art-card p-6">
+                <h3 class="text-xl font-bold text-orange-400">Digital Masterpieces</h3>
+                <p class="text-gray-300 mt-4">A collection of stunning digital artwork blending technology and creativity.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="art-card p-6">
+                <h3 class="text-xl font-bold text-orange-400">Surreal Landscapes</h3>
+                <p class="text-gray-300 mt-4">Explore dreamlike scenes that challenge the perceptions of reality.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="art-card p-6">
+                <h3 class="text-xl font-bold text-orange-400">Sculptural Wonders</h3>
+                <p class="text-gray-300 mt-4">Marvel at the masterpieces of sculpture, where form and texture collide.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-center text-gray-400">
+        <p>© 2024 ArtSphere. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

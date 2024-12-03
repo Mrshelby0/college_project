@@ -3,163 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Idea Hub - Categories</title>
+    <title>Technology Innovations</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-blur {
-            background-image: url('Designer.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            overflow: hidden;
+        body {
+            background: #0a0f1c;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
         }
-        .bg-blur::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: inherit;
-            filter: blur(50px); /* Adjust blur effect here */
-            z-index: -1;
+        .glow-title {
+            font-size: 3rem;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(79, 172, 254, 0.8), 0 0 20px rgba(0, 242, 254, 0.8);
         }
-    </style>
-    <style>
-        @keyframes rgb-hr {
-            0% {
-                background-position: 0% 50%;
+        .tech-card, .category-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tech-card:hover, .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 242, 254, 0.3);
+        }
+        .button-explore {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #0a0f1c;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button-explore:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(to right, #00f2fe, #4facfe);
+        }
+        .gradient-border {
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #4facfe, #00f2fe) 1;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
             }
             50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
+                transform: translateY(-10px);
             }
         }
-        
-        .rgb-hr {
-            border: 0;
-            height: 5px;
-            background: linear-gradient(270deg, red, green, blue, yellow,pink,purple,white,black, red);
-            background-size: 600% 600%;
-            animation: rgb-hr 5s infinite;
-        }
-        
-        
-        </style>
-    <script>
-        const projects = {
-            "Web Development": [
-                { id: 1, title: "Responsive Portfolio", description: "A responsive portfolio website using HTML, CSS, and JavaScript." },
-                { id: 2, title: "E-commerce Site", description: "An online store built with React and Node.js." },
-                { id: 3, title: "Car Selling Site", description: "An online store to sell car and buy car built with HTML, TAILWIND CSS, PHP" }
-            ],
-            "Mobile Applications": [
-                { id: 4, title: "Weather App", description: "A weather forecasting app using React Native." },
-                { id: 5, title: "Fitness Tracker", description: "A fitness tracking app with daily activity logging and stats." }
-            ],
-            // Add more categories and projects here
-        };
-
-        function displayProjects(category) {
-            const projectContainer = document.getElementById('project-container');
-            projectContainer.innerHTML = '';
-
-            if (projects[category]) {
-                projects[category].forEach(project => {
-                    const projectCard = `
-                        <div class="bg-gray-200 hover:bg-gray-300 border-4 hover:border-green-500 p-4 rounded-lg">
-                            <h2 class="text-2xl font-bold text-[#5cb9a6]">${project.title}</h2>
-                            <p class="mt-2">${project.description}</p>
-                            <a href="project.html?id=${project.id}" class="text-green-500 mt-4 inline-block">Read more</a>
-                        </div>
-                        <br>
-                    `;
-                    projectContainer.innerHTML += projectCard;
-                });
-            } else {
-                projectContainer.innerHTML = '<p class="text-xl text-gray-700">No projects available in this category.</p>';
-            }
-        }
-    </script>
+    </style>
 </head>
-<body class="text-black">
+<body>
     <!-- Header -->
-    <header class="bg-black p-4 flex justify-between items-center">
-        <div class="text-2xl text-green-500 font-bold">Project Idea Hub</div>
+    <header class="py-6 px-10 bg-gray-900 flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold text-cyan-400">TechSphere</h1>
         <nav>
-            <a href="index.html" class="text-white hover:text-green-500 px-4">Home</a>
-            <a href="cat.html" class="text-green-500 text-2xl px-4">Categories</a>
-            <a href="submit.html" class="text-white hover:text-green-600 px-4">Submit Project</a>
-            <a href="about.html" class="text-white hover:text-green-600 px-4">About</a>
-            <a href="contact.html" class="text-white hover:text-green-600 px-4">Contact</a>
-            <a href="login.html" class="text-white hover:text-green-600 px-4">Login/Signup</a>
+            <a href="#" class="text-gray-300 hover:text-cyan-400 mx-4">Home</a>
+            <a href="#" class="text-gray-300 hover:text-cyan-400 mx-4">Projects</a>
+            <a href="#" class="text-gray-300 hover:text-cyan-400 mx-4">Submit</a>
+            <a href="#" class="text-gray-300 hover:text-cyan-400 mx-4">Contact</a>
         </nav>
     </header>
-    <hr class="border-t-4 border-green-500">
 
-    <!-- Main Section -->
-    <main class="p-10 bg-blur text-center">
-        <h1 class="text-4xl font-bold text-green-500 mb-8"><div id="typing-effect"></div></h1>
-        <input type="text" class="p-2 w-2/3 rounded bg-white text-black" placeholder="Search for projects...">
-    </main>
-    <hr class="rgb-hr">
-
-    <!-- Content Section -->
-    <section class="flex">
-        <!-- Sidebar with Categories -->
-        <aside class="w-1/4 p-4 bg-gray-300">
-            <h2 class="text-2xl font-bold text-green-500 mb-4">Technology Categories</h2>
-            <ul class="list-disc list-inside text-xl text-gray-700">
-                <li class="py-2"><a href="webdev.html" class="text-green-600 hover:text-green-800">Web Development</a></li>
-                <li class="py-2"><a href="mobileapp.htmln" class="text-green-600 hover:text-green-800">Mobile Applications</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Data Science</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Artificial Intelligence</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Machine Learning</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Internet of Things (IoT)</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Cyber Security</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Blockchain</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Robotics</a></li>
-                <li class="py-2"><a href="#" class="text-green-600 hover:text-green-800">Game Development</a></li>
-            </ul>
-        </aside>
-
-        <!-- Project Display Area -->
-        <div id="project-container" class="w-3/4 p-4">
-            <h2 class="text-3xl font-bold text-green-500 mb-8">Select a Technology category to view projects</h2>
-            <!-- Projects will be displayed here -->
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-6">
+        <h1 class="glow-title">Pioneering Tomorrow's Technology</h1>
+        <p class="text-gray-400 mt-4 text-lg">Discover groundbreaking projects that define the future of innovation.</p>
+        <div class="mt-6">
+            <input 
+                type="text" 
+                class="w-2/3 max-w-xl p-3 rounded-md border border-gray-600 bg-gray-800 text-gray-300 placeholder-gray-500" 
+                placeholder="Search technology projects...">
         </div>
     </section>
 
-    <hr class="rgb-hr">
+    <!-- Categories Section -->
+    <section class="py-12 px-10">
+        <h2 class="text-3xl font-bold text-cyan-400 text-center">Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <!-- Card 1 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-cyan-400">AI & Machine Learning</h4>
+                <p class="text-gray-300 mt-4">Discover projects exploring artificial intelligence and deep learning models.</p>
+                <a href="#" class="inline-block mt-4 text-cyan-400 hover:underline">View Projects →</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-cyan-400">Cybersecurity</h4>
+                <p class="text-gray-300 mt-4">Learn about innovative solutions for data protection and ethical hacking.</p>
+                <a href="#" class="inline-block mt-4 text-cyan-400 hover:underline">View Projects →</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="category-card p-6 gradient-border floating">
+                <h4 class="text-2xl font-bold text-cyan-400">Quantum Computing</h4>
+                <p class="text-gray-300 mt-4">Explore the cutting edge of computational power with quantum mechanics.</p>
+                <a href="#" class="inline-block mt-4 text-cyan-400 hover:underline">View Projects →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-12 px-10">
+        <h2 class="text-2xl font-bold text-cyan-400 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- Card 1 -->
+            <div class="tech-card p-6">
+                <h3 class="text-xl font-bold text-cyan-400">AI in Healthcare</h3>
+                <p class="text-gray-300 mt-4">Revolutionizing diagnostics and patient care with machine learning.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="tech-card p-6">
+                <h3 class="text-xl font-bold text-cyan-400">Blockchain Security</h3>
+                <p class="text-gray-300 mt-4">Creating secure and decentralized digital ecosystems.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="tech-card p-6">
+                <h3 class="text-xl font-bold text-cyan-400">Quantum Computing</h3>
+                <p class="text-gray-300 mt-4">Unleashing the power of quantum mechanics for complex problems.</p>
+                <a href="#" class="button-explore mt-6 inline-block">Learn More</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-black p-4 text-center">
-        <div class="text-white">
-            <a href="#" class="px-4">Privacy Policy</a>
-            <a href="#" class="px-4">Terms of Service</a>
-            <a href="#" class="px-4">© 2024 Project Idea Hub</a>
-        </div>
+    <footer class="py-6 bg-gray-800 text-center text-gray-400">
+        <p>© 2024 TechSphere. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        const text = "Explore Technology Project";
-
-        let index = 0;
-        const typingEffectElement = document.getElementById('typing-effect');
-
-        function typeEffect() {
-            if (index < text.length) {
-                typingEffectElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 100); // Adjust typing speed here (milliseconds)
-            } else {
-                // Pause before restarting
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', typeEffect);
-    </script>
 </body>
 </html>

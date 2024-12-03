@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Project Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        .gradient-border {
+            border: 4px solid;
+            border-image: linear-gradient(45deg, cyan, purple, lime, magenta) 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-800 p-4 flex justify-between items-center shadow-lg">
+        <h1 class="text-2xl font-bold text-green-400">Science Project Hub</h1>
+        <nav>
+            <a href="index.html" class="text-white hover:text-green-400 px-4">Home</a>
+            <a href="categories.html" class="text-white hover:text-green-400 px-4">Categories</a>
+            <a href="submit.html" class="text-white hover:text-green-400 px-4">Submit Project</a>
+            <a href="about.html" class="text-white hover:text-green-400 px-4">About</a>
+            <a href="contact.html" class="text-white hover:text-green-400 px-4">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+        <h2 class="text-4xl font-bold mb-4 text-green-400">Explore Science Projects</h2>
+        <p class="text-lg text-gray-300 mb-6">Dive into the world of innovative and exciting science projects.</p>
+        <input type="text" placeholder="Search for projects..." class="p-3 rounded w-1/2 bg-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400" />
+    </section>
+
+    <!-- Categories Section -->
+    <section class="p-8">
+        <h3 class="text-3xl font-bold text-green-400 mb-6">Categories</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow gradient-border floating">
+                <h4 class="text-2xl font-bold text-green-400">Physics</h4>
+                <p class="text-gray-300 mt-4">Explore projects related to mechanics, thermodynamics, and electromagnetism.</p>
+                <a href="physics.html" class="inline-block mt-4 text-green-400 hover:underline">View Projects →</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow gradient-border floating">
+                <h4 class="text-2xl font-bold text-blue-400">Chemistry</h4>
+                <p class="text-gray-300 mt-4">Discover chemical experiments and reactions in action.</p>
+                <a href="chemistry.html" class="inline-block mt-4 text-blue-400 hover:underline">View Projects →</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow gradient-border floating">
+                <h4 class="text-2xl font-bold text-purple-400">Biology</h4>
+                <p class="text-gray-300 mt-4">Learn about life sciences and environmental studies.</p>
+                <a href="biology.html" class="inline-block mt-4 text-purple-400 hover:underline">View Projects →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="bg-gray-800 py-12">
+        <h3 class="text-3xl font-bold text-green-400 text-center mb-8">Featured Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-6">
+            <!-- Example Project Card -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold text-green-400">Volcano Eruption Model</h4>
+                <p class="text-gray-300 mt-4">A visual demonstration of volcanic eruptions using simple household items.</p>
+                <a href="#" class="text-green-400 hover:underline inline-block mt-4">Read More →</a>
+            </div>
+
+            <!-- Example Project Card -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold text-blue-400">Chemical Reaction Experiments</h4>
+                <p class="text-gray-300 mt-4">Explore how various chemicals interact to create fascinating reactions.</p>
+                <a href="#" class="text-blue-400 hover:underline inline-block mt-4">Read More →</a>
+            </div>
+
+            <!-- Example Project Card -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold text-purple-400">DNA Structure Model</h4>
+                <p class="text-gray-300 mt-4">Understand the building blocks of life with this interactive model.</p>
+                <a href="#" class="text-purple-400 hover:underline inline-block mt-4">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-gray-400">© 2024 Science Project Hub | Made with ❤️</p>
+    </footer>
+</body>
+</html>
