@@ -46,13 +46,18 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 
 - **Home Page**: A simple and clean interface with search functionality, featured projects, and categories.
 - **Project Detail Page**: A page that provides detailed information about a specific project idea, including images, instructions, and related projects.
-- **User Dashboard**: A personalized dashboard where users can manage their submissions, saved ideas, and collaborations.
+
 
 ![Home Page Mockup](homepage.png)
+
 ![Project Detail Page Mockup](projectpage.png)
+
 ![Project Page](sciencepage.png)
+
 ![Article/Blog](article1.png)
+
 ![Comment Section](article2.png)
+
 
 
 
@@ -77,6 +82,8 @@ The Data Flow Diagram (DFD) for **Project Idea Hub** helps visualize the flow of
 
 ![Data Flow Diagram](DFD_Level_1.png)
 
+
+![ERD](ERD_Project_Idea_Hub.png)
 
 
 ## Installation
