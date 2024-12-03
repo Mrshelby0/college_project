@@ -50,7 +50,10 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 
 ![Home Page Mockup](homepage.png)
 ![Project Detail Page Mockup](projectpage.png)
-![User Dashboard Mockup](path/to/user-dashboard-mockup.png)
+![Project Page](science.png)
+![Article/Blog](article1.png)
+![Comment Section](article2.png)
+
 
 
 
@@ -63,13 +66,16 @@ The Data Flow Diagram (DFD) for **Project Idea Hub** helps visualize the flow of
 - **Users** interact with the system by searching for project ideas, submitting new ideas, and collaborating with others.
 - **System** processes the requests, retrieves or stores data in the database, and presents the results back to the users.
 
+
+![Data Flow Diagram level-0](Context_Level_DFD.png)
+
 **Level 1 - Detailed DFD:**
 
 - **Search Module**: Handles user input for searching project ideas and filters results based on user preferences.
 - **Submission Module**: Allows users to submit new project ideas, which are then stored in the database.
 - **Collaboration Module**: Manages user interactions for discussion and collaboration on projects.
 
-![Data Flow Diagram](dfddiagram.png)
+![Data Flow Diagram](DFD_Level_1.png)
 
 
 
