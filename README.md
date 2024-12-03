@@ -50,7 +50,7 @@ Here are some initial wireframes and mockups that illustrate the design and layo
 
 ![Home Page Mockup](homepage.png)
 ![Project Detail Page Mockup](projectpage.png)
-![Project Page](science.png)
+![Project Page](sciencepage.png)
 ![Article/Blog](article1.png)
 ![Comment Section](article2.png)
 
